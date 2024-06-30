@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+.hide {
+    display: none;
+}
+
 .whatsapp_float {
     position: fixed;
     width: 60px;
