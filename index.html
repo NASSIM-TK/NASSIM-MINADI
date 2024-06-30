@@ -92,12 +92,30 @@
     </script>
 
 
-    <a 
-    href="https:/wa.me/+2130559595203" 
-    target="_blank" 
-    class="whatsapp_float"><i 
-    class="fa-brands fa-whatsapp whatsapp-icon"></i>
-    </a>
+    <script type="text/javascript">
+        function sendwhatsapp(){
+         var phonenumber = "+213557096469";
+  
+         var name = document.querySelector(".name").value;
+         var surname = document.querySelector(".surname").value;
+         var city = document.querySelector(".city").value;
+         var number = document.querySelector(".number").value;
+  
+         var url = "https://wa.me/" + phonenumber + "?text="
+
+
+
+            window.open(url, '_blank').focus();
+         }
+    </script>    
+
+    <button 
+onclick="sendwhatsapp();"
+target="_blank" 
+class="whatsapp_float" 
+  >
+<i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+</button>
     
 
     <section class="main ">
@@ -243,6 +261,27 @@
             
         </div>    
     </footer>
+
+    <div class="hide">
+        <div class="input1">
+            <input type="text" class="name" required>
+            <label for=""> الإسم↑ </label>
+        </div>
+        <div class="input2"> <br>
+            <input type="text" class="surname" required>
+            <label for=""> اللقب ↑</label>
+        </div>
+    
+    
+        <div class="input3"> <br>
+            <input type="text" class="number" required>
+            <label for="">الهاتف ↑</label>
+        </div>
+        <div class="input4"> <br>
+            <input type="text" class="city" required>
+            <label for="">المدينة ↑</label>
+    </div>
+        
 <script  src="/assets/js/app.js"></script>
 </body>
 </html>
